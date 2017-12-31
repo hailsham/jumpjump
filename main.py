@@ -6,7 +6,7 @@ Created on Sat Dec 30 22:03:48 2017
 """
 
 import os
-from tiao import get_dist, dist2time
+from location import get_dist, dist2time
 import time
 
 
