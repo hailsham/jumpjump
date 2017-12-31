@@ -2,15 +2,10 @@
 """
 Created on Sun Dec 31 01:35:27 2017
 
-@author: Arexy
+@author: Leifei
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Dec 28 19:09:34 2017
 
-@author: Arexy
-"""
 
 import cv2
 import numpy as np
@@ -80,7 +75,7 @@ def get_dist():
     
     dist = np.sqrt( np.square((person_cor[0] - dst_cor[0])) + np.square((person_cor[1] - dst_cor[1])) )
     
-    return dist,img
+    return dist
 
     
 ## 两个系数是不同的尝试结果估计得到的

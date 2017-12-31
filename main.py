@@ -22,7 +22,7 @@ def get_screen():
 def main():
     while True:
         get_screen()
-        dist,img = get_dist()
+        dist = get_dist()
         t = dist2time(dist)
         print t
         jump(t)
