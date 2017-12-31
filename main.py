@@ -20,7 +20,7 @@ def get_screen():
 
     
 def main():
-    while True:
+    for i in range(500):
         get_screen()
         dist = get_dist()
         t = dist2time(dist)
