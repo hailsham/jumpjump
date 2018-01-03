@@ -12,7 +12,7 @@ import numpy as np
 
 def get_dist():
     img =  cv2.imread('1.png')
-    img = cv2.resize(img, (0, 0), fx=0.2,  fy = 0.2, interpolation = cv2.INTER_CUBIC)
+    img = cv2.resize(img, (288, 512), fx=0,  fy =0, interpolation = cv2.INTER_CUBIC)
     img = img[100:450, 20:275]
     img_hsv =  cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
     
@@ -50,7 +50,7 @@ def get_dist():
     
     ##为了防止小人比目的砖块还高，将小人的人头填充成背景颜色
     bg_color = img[person_x, ys_item[0][0] - 100, :]
-    img[ ys_item[0][0]: (ys_item[0][0]+20),xs_item[0][0]:xs_item[-1][0]] = bg_color
+    img[ ys_item[0][0]: (ys_item[0][0]+30),xs_item[0][0]:xs_item[-1][0]] = bg_color
     
     
     ##通过最高点的位置找到目的砖块
