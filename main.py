@@ -24,7 +24,7 @@ def main():
         get_screen()
         dist = get_dist()
         t = dist2time(dist)
-        print t
+        print t 
         jump(t)
         time.sleep(1)
 

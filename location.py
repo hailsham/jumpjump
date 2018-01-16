@@ -67,7 +67,7 @@ def get_dist():
     
     cols[cols > 0 ] = 1
     cols_item = np.argwhere( cols == 1)
-    clr_y = cols_item[0][0] + 25
+    clr_y = cols_item[0][0] + 30
     clr_x_items = np.argwhere(edges[cols_item[0][0]] == 255)
     clr_x = int((clr_x_items[0] + clr_x_items[-1])[0] /2)
 
